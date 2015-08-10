@@ -1,0 +1,10 @@
+<div ng-repeat="call in calls">
+	<p>{{call.from}}</p>
+	<p>{{call.date_sent | date}}</p>
+	<p>{{call.body}}</p>
+	<br>
+</div>
+
+<form ng-submit="sendText()">
+	<input type="text" ng-model="newText" placeholder="New text..." />
+</form>

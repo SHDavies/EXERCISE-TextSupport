@@ -6,4 +6,8 @@ app.controller('supportController', function($scope, $firebaseArray, mainService
 	$scope.sendText = function() {
 		mainService.sendText($scope.newText);
 	}
+
+	$scope.getTerms = function() {
+		mainService.getTerms();
+	}
 })

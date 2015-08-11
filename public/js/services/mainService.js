@@ -5,9 +5,13 @@ app.service('mainService', function($q, $http) {
 			url: 'http://localhost:8887/support/messages',
 			method: "POST",
 			data: {
-				to: "",
+				to: "8014714889",
 				message: message
 			}
 		})
 	};
+
+	this.getTerms = function() {
+		$http.get('http://localhost:8887/support/resources/terms-and-conditions')
+	}
 })
